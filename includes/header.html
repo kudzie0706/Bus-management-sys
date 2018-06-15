@@ -1,0 +1,26 @@
+<?php include('core/dbconnect.php'); ?>
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="button.css" type="text/css" />
+	<link rel='stylesheet' type='text/css' href='menu_styles.css' />
+	<script src='includes/jquery.js'></script>
+	<script type='text/javascript' src='includes/menu_jquery.js'></script>
+	
+<title><?php echo $title ?></title>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="logo" align="center"><a href="<?php if(!(isset($_SESSION['user_id']))) { echo '/kayliner/'; } else {echo '/kayliner/home.php';}?>"><img src="images/bot_logo.png" ></a></div>
+<div id="banner">
+ <embed src="images/flash.swf" width="583px" height="95px">
+</div>
+<div id="header"></div>
+<div id="container">
+

@@ -1,0 +1,37 @@
+<!-- 
+	Here is an example of how to link to  a page in the menu we made
+    
+    1 (before editing)
+    <li><a href='#'><span>Route</span></a></li>
+    
+    2 (after editing)
+    <li><a href='add_route.php'><span>Route</span></a></li>
+	
+-->
+<div id='cssmenu'>
+<ul>
+   <li><a href='add_maintenance.php'><span>Bus Maintenance</span></a>
+   </li>
+   <li><a href='add_fuel_record.php'><span>Fuel Allocation</span></a>
+   </li>
+   <li class='has-sub'><a href='#'><span>View</span></a>
+      <ul>
+         <li><a href='view_route.php'><span>Route</span></a></li>
+         <li><a href='view_bus.php'><span>Bus</span></a></li>
+         <li><a href='view_driver.php'><span>Driver</span></a></li>
+         <li><a href='view_staff.php'><span>Staff</span></a></li>
+         <li class='last'><a href='view_fuel.php'><span>Fuel Tank</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>Reports</span></a>
+      <ul>
+         <li><a href='report_maintenance.php'><span>Bus Maintenance</span></a></li>
+         <li><a href='report_trip.php'><span>Trip Report</span></a></li>
+         <li><a href='report_fuel_tank.php'><span>Fuel Tank Report</span></a></li>
+         <li class='last'><a href='report_fuel_reserved.php'><span>Fuel Reserve Report</span></a></li>
+      </ul>
+   </li>
+   <li><a href='locate.php'><span>Locate Bus</span></a></li>
+<li><a href='chat_with_us.php'><span>Chat Service</span></a></li>
+   <li class='last'><a href='logout.php'><span>Logout</span></a></li>
+</ul>
